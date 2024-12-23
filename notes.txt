@@ -1,0 +1,7 @@
+What do I need to make this proyect?
+- Know how data-attributes works
+- Render child elements into the web page.  ✅
+- Know how to use dialog tag and its methods. 
+- Basic array methods (foreach,delete,push). 
+- Working with objects
+- Review how to work with images

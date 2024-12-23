@@ -3,13 +3,60 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=º">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book library App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="wrapper">
+        <header>
+            <h1>My books</h1>
+            <div class="button_container">
+                <button class="button" id="btn__addBook">Add book</button>
+            </div>
 
-    <script src="main.js"></script>
+        </header>
+        <main>
+            <section class="books" id="books_container">
+                <!-- <article class="book" data-index="1">
+                    <h2 class="book__title">Hobbit</h2>
+                    <figure class="book__image-container">
+                        <img src="https://cdn11.bigcommerce.com/s-nfxi2m/images/stencil/640w/products/646/3216/Hobbit-book2__13763.1694542278.jpg?c=2"
+                            alt="book image" class="img">
+                    </figure>
+                    <p class="book__author">J.R.R</p>
+                    <p class="book__pages">320</p>
+
+                    <div class="book__buttons">
+                        <button class="button">remove</button>
+                        <button class="button">read/not read</button>
+                    </div>
+                </article> -->
+            </section>
+        </main>
+        <dialog id="dialog" class="modal">
+            <form class="form">
+                <label for="titulo">Titulo</label>
+                <input type="text" placeholder="Hobbit" name="title" required id="title">
+                <label for="autor">Autor</label>
+                <input type="text" placeholder="J.R.R" name="author" required id="author">
+                <label for="pages">Cantidad de paginas</label>
+                <input type="number" placeholder="10" name="pages" required id="pages">
+
+                <div class="form__buttons">
+                    <button class="button" id="confirm__button">Confirm</button>
+                    <button class="button" formmethod="dialog">Cancel</button>
+                </div>
+            </form>
+        </dialog>
+        <footer>
+            <p>Made by Gonzalo Perez</p>
+        </footer>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js" type="module"></script>
 </body>
 
 </html>
